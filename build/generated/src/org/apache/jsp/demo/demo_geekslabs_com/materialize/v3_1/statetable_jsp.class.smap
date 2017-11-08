@@ -1,0 +1,20 @@
+SMAP
+statetable_jsp.java
+JSP
+*S JSP
+*F
++ 0 statetable.jsp
+demo/demo.geekslabs.com/materialize/v3.1/statetable.jsp
++ 1 saidebar.jsp
+demo/demo.geekslabs.com/materialize/v3.1/saidebar.jsp
+*L
+1,17:53
+1#1,331:70
+17#0,97:401
+114,6:499
+119,2:505
+121,2:507,3
+123,3:513
+126:516,3
+127,52:519
+*E

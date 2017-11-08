@@ -1,0 +1,14 @@
+SMAP
+user_005fadd_005ftable_jsp.java
+JSP
+*S JSP
+*F
++ 0 user_add_table.jsp
+demo/demo.geekslabs.com/materialize/v3.1/user_add_table.jsp
++ 1 saidebar.jsp
+demo/demo.geekslabs.com/materialize/v3.1/saidebar.jsp
+*L
+1,13:49
+1#1,346:62
+13#0,162:408
+*E

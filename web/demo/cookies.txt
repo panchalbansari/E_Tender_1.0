@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.github.com	TRUE	/	FALSE	1999999999	_octo	GH1.1.1373821261.1505214312
+www.npmjs.com	TRUE	/	FALSE	1999999999	crumb	sByvCIt_X-PO3tC51LI5H72FyQH-OPZjUn0pqWZ45uS
+www.npmjs.com	TRUE	/	FALSE	1999999999	SameSite	Strict
+.github.com	TRUE	/	FALSE	1999999999	logged_in	no
+github.com	TRUE	/	FALSE	1999999999	_gh_sess	eyJzZXNzaW9uX2lkIjoiYTQyOGI0MWU4MmNiOTlkMmQ4ZTM3MzlmNzI4MDcwZDUiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUwNTIxNjg5NjI3NSwicmVmZXJyYWxfY29kZSI6Imh0dHA6Ly9kZW1vLmdlZWtzbGFicy5jb20vbWF0ZXJpYWxpemUvdjMuMS9mb3JtLW1hc2tzLmh0bWwiLCJzcHlfcmVwbyI6ImZpcnN0b3Bpbmlvbi9mb3JtYXR0ZXIuanMiLCJzcHlfcmVwb19hdCI6MTUwNTIxNjg5NSwiX2NzcmZfdG9rZW4iOiIvbFhZK05NdDM4QVNCK045UlN3aVNFVTJ0RFpITUJpcGVlYUplcCtUeUdzPSIsInJldHVybl90byI6Ii9jb250YWN0In0%3D--73b0632c197d3c7e317715caa3b82f5fe6fd6a3b
+

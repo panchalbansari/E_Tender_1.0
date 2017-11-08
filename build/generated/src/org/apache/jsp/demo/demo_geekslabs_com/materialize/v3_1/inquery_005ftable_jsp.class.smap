@@ -1,0 +1,14 @@
+SMAP
+inquery_005ftable_jsp.java
+JSP
+*S JSP
+*F
++ 0 inquery_table.jsp
+demo/demo.geekslabs.com/materialize/v3.1/inquery_table.jsp
++ 1 saidebar.jsp
+demo/demo.geekslabs.com/materialize/v3.1/saidebar.jsp
+*L
+1,11:49
+1#1,354:60
+11#0,172:414
+*E

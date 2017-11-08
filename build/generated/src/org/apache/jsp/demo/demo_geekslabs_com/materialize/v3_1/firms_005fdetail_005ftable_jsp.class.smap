@@ -1,0 +1,14 @@
+SMAP
+firms_005fdetail_005ftable_jsp.java
+JSP
+*S JSP
+*F
++ 0 firms_detail_table.jsp
+demo/demo.geekslabs.com/materialize/v3.1/firms_detail_table.jsp
++ 1 saidebar.jsp
+demo/demo.geekslabs.com/materialize/v3.1/saidebar.jsp
+*L
+1,11:49
+1#1,362:60
+11#0,175:422
+*E

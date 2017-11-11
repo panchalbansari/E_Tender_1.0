@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +15,7 @@
  <%@include file="saidebar.jsp" %>
 <!-- Mirrored from demo.geekslabs.com/materialize/v3.1/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2017 10:28:19 GMT -->
 <head>
-  
-
+     
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,6 +50,7 @@
 
 <body>
   
+  <!-- End Page Loading -->
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
 
@@ -57,14 +61,7 @@
   <div id="main">
     <!-- START WRAPPER -->
     <div class="wrapper">
-
-     
-      <!-- //////////////////////////////////////////////////////////////////////////// -->
-
-      <!-- START CONTENT -->
-      <section id="content">
-
-        <!--breadcrumbs start-->
+<!--breadcrumbs start-->
         <div id="breadcrumbs-wrapper">
             <!-- Search for small screen -->
             <div class="header-search-wrapper grey hide-on-large-only">
@@ -74,14 +71,16 @@
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Area Form</h5>
+                <h5 class="breadcrumbs-title">Compnay table</h5>
                 <ol class="breadcrumbs">
                   <li><a href="index.html">Patners</a>
                   </li>
-                  <li><a href="#">Company tanle</a>
+                  <li class=active">Company table
                   </li>
-                  <li class="active">Add Company Form</li>
                 </ol>
+                <div class="divider"></div>
+                <p><a class="btn waves-effect waves-light blue" href="company_form.jsp">Add compnay form</a></p>
+                 
               </div>
             </div>
           </div>
@@ -89,39 +88,53 @@
         <!--breadcrumbs end-->
 
 
-        <!--start container-->
-        <div class="container">
-          <div class="section">
 
+                  
+           <div id="borderless-table">
+              
+              <div class="row">
+                <div class="col s12 m4 l3">
+                 
+                </div>
+                <div class="col s12 m8 l9">
+                  <table>
+                  </tbody>
+                    <thead>
+                      <tr>
+                        <th data-field="id">Cmp_id</th>
+                        <th data-field="name">Company_name</th>
+                        <th data-field="price">Op1</th>
+                        <th data-field="id">Op2</th>
+                      </tr>
+                    </thead>
+                    <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `partner`");//SQl Query
+                       while (rs.next()) {
+                       %>
+                        <tr>
+                        <td><%= rs.getInt(1)%></td>
+                        <td><%= rs.getString(2)%></td>
+                        <td><a href="edit_logo">Edit</td>
+                        <td><a href="edit_logo">Delete</td>
+                       </tr>
+                      <%}%>
+
+                   
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
             
             <div class="divider"></div>
-            <!--Basic Form-->
-            <div id="basic-form" class="section">
-              <div class="row">                <div class="col s12 m12 l6">
-                  <div class="card-panel">
-                    <h4 class="header2">Add Company form</h4>
-                    <div class="row">
-                      <form class="col s12" action="http://localhost:8084/E_Tender_1.0/Addpartnerservlet" method="get">
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <input id="company_name" name="company_name" type="text">
-                            <label for="first_name">Company Name</label>
-                          </div>
-                        </div>
-                          <p><button type="submit" form="form1" value="Submit">Submit</button>
-                          <a class="btn waves-effect waves-light blue">Cancle</a>
-                          <a class="btn waves-effect waves-light blue" href="add_patner.jsp">view</a></p>
-                          
-                      </form>
-                    </div>
-                  </div>
-                </div>
-               
-      </div>
-  </section>
-  <!-- END CONTENT -->
+            
+            <!--Bordered Table-->
+     
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-  <!-- //////////////////////////////////////////////////////////////////////////// -->
   
   </div>
   <!-- END WRAPPER -->

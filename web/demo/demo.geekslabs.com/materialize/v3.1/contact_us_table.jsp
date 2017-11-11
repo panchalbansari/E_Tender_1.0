@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,7 +102,7 @@
                     <thead>
                       <tr>
                         <th data-field="id">Contact_us_id</th>
-                         <th data-field="name">Comapny_name</th>
+                         <th data-field="name">Company_name</th>
                         <th data-field="name">Address</th>
                         <th data-field="price">Pincode</th>
                         <th data-field="id">State</th>
@@ -111,20 +115,28 @@
                         <th data-field="id">Op2</th>
                       </tr>
                     </thead>
+                    <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `contactus`");//SQl Query
+                       while (rs.next()) {
+                       %>
                         <tr>
-                        <td>1</td>
-                        <td>SB Electrical</td>
-                        <td>C-32 Sanskruti fats,Nr. tejas school </td>
-                        <td>380058</td>
-                        <td>Gujarat</td>
-                        <td>Ahmedabad</td>
-                        <td>Bopal</td>
-                        <td>ab123@gmail.com</td>
-                        <td>2345612389</td>
-                        <td>www.SB_Electrical.org</td>
+                        <td><%= rs.getInt(1)%></td>
+                        <td><%= rs.getString(2)%></td>
+                        <td><%= rs.getString(3)%></td>
+                        <td><%= rs.getString(4)%></td>
+                        <td><%= rs.getString(5)%></td>
+                        <td><%= rs.getString(6)%></td>
+                        <td><%= rs.getString(7)%></td>
+                        <td><%= rs.getString(8)%></td>
+                        <td><%= rs.getString(9)%></td>
+                        <td><%= rs.getString(10)%></td>
                         <td><a href="edit_contact_us">Edit</td>
                         <td><a href="delete_contact_us">Delete</td>
                        </tr>
+                       <%}%>
                       
 
                    

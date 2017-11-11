@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class download_005ftenders_005fform_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class add_005fuser_005ftype_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -514,13 +514,13 @@ public final class download_005ftenders_005fform_jsp extends org.apache.jasper.r
       out.write("          <div class=\"container\">\n");
       out.write("            <div class=\"row\">\n");
       out.write("              <div class=\"col s12 m12 l12\">\n");
-      out.write("                <h5 class=\"breadcrumbs-title\">Download_Tenders_Form</h5>\n");
+      out.write("                <h5 class=\"breadcrumbs-title\">User_type Form</h5>\n");
       out.write("                <ol class=\"breadcrumbs\">\n");
-      out.write("                  <li><a href=\"index.html\">Download tenders</a>\n");
+      out.write("                  <li><a href=\"index.html\">Registration</a>\n");
       out.write("                  </li>\n");
-      out.write("                  <li><a href=\"#\">Download_tender_table</a>\n");
+      out.write("                  <li><a href=\"#\">User_add_table</a>\n");
       out.write("                  </li>\n");
-      out.write("                  <li class=\"active\">Download_Tenders Form</li>\n");
+      out.write("                  <li class=\"active\">Add User_type Form</li>\n");
       out.write("                </ol>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
@@ -540,27 +540,19 @@ public final class download_005ftenders_005fform_jsp extends org.apache.jasper.r
       out.write("              <div class=\"row\">\n");
       out.write("                <div class=\"col s12 m12 l6\">\n");
       out.write("                  <div class=\"card-panel\">\n");
-      out.write("                    <h4 class=\"header2\">Download_tender form</h4>\n");
+      out.write("                    <h4 class=\"header2\">Add User_type form</h4>\n");
       out.write("                    <div class=\"row\">\n");
-      out.write("                      <form class=\"col s12\"  action=\"http://localhost:8084/E_Tender_1.0/AddDownloadTenderServlet\" method=\"get\" >\n");
+      out.write("                        <form class=\"col s12\"  action=\"http://localhost:8084/E_Tender_1.0/AddUsertypeServlet\" method=\"get\">\n");
       out.write("                        <div class=\"row\">\n");
-      out.write("\n");
-      out.write("                               \n");
-      out.write("              \n");
-      out.write("                             <div class=\"input-field col s12\">\n");
-      out.write("                            <input id=\"donload_tender_path\" name=\"donload_tender_path\" type=\"text\">\n");
-      out.write("                            <label for=\"first_name\">Downloaded tenders</label>\n");
-      out.write("                            <a class=\"btn waves-effect waves-light blue\">Browse</a>\n");
-      out.write("                          </div>\n");
-      out.write("              \n");
-      out.write("                             \n");
+      out.write("                          <div class=\"input-field col s12\">\n");
+      out.write("                            <input id=\"user\" name=\"user\" type=\"text\">\n");
+      out.write("                            <label for=\"first_name\">User_type</label>\n");
       out.write("                          </div>\n");
       out.write("                        </div>\n");
-      out.write("                    ");
-      out.write("\n");
-      out.write("                    <button type=\"submit\"  value=\"Submit\">Submit</button>      \n");
-      out.write("                    <a class=\"btn waves-effect waves-light blue\">Cancle</a>\n");
-      out.write("                          <a class=\"btn waves-effect waves-light blue\" href=\"download_tender_table.jsp\">view</a></p>\n");
+      out.write("                              <p><input class=\"btn waves-effect waves-light blue\" type=\"submit\" value=\"Add\"></a>\n");
+      out.write("                           \n");
+      out.write("                          <a class=\"btn waves-effect waves-light blue\">Cancle</a>\n");
+      out.write("                          <a class=\"btn waves-effect waves-light blue\" href=\"user_add_table.jsp\">view</a></p>\n");
       out.write("                          \n");
       out.write("                      </form>\n");
       out.write("                    </div>\n");
@@ -588,30 +580,6 @@ public final class download_005ftenders_005fform_jsp extends org.apache.jasper.r
       out.write("\n");
       out.write("\n");
       out.write("    <!-- ================================================\n");
-      out.write("    Scripts\n");
-      out.write("    ================================================ -->\n");
-      out.write("    \n");
-      out.write("    <!-- jQuery Library -->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/plugins/jquery-1.11.2.min.js\"></script>    \n");
-      out.write("    <!--materialize js-->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/materialize.min.js\"></script>\n");
-      out.write("    <!--prism-->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/plugins/prism/prism.js\"></script>\n");
-      out.write("    <!--scrollbar-->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/plugins/perfect-scrollbar/perfect-scrollbar.min.js\"></script>\n");
-      out.write("    <!-- chartist -->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/plugins/chartist-js/chartist.min.js\"></script>   \n");
-      out.write("    \n");
-      out.write("    <!--plugins.js - Some Specific JS codes for Plugin Settings-->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/plugins.min.js\"></script>\n");
-      out.write("    <!--custom-script.js - Add your own theme custom JS-->\n");
-      out.write("    <script type=\"text/javascript\" src=\"js/custom-script.js\"></script>\n");
-      out.write("    \n");
-      out.write("</body>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!-- Mirrored from demo.geekslabs.com/materialize/v3.1/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2017 10:28:19 GMT -->\n");
-      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

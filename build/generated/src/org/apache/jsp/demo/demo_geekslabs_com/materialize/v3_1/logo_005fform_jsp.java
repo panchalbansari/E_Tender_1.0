@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class download_005ftenders_005fform_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class logo_005fform_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -514,13 +514,13 @@ public final class download_005ftenders_005fform_jsp extends org.apache.jasper.r
       out.write("          <div class=\"container\">\n");
       out.write("            <div class=\"row\">\n");
       out.write("              <div class=\"col s12 m12 l12\">\n");
-      out.write("                <h5 class=\"breadcrumbs-title\">Download_Tenders_Form</h5>\n");
+      out.write("                <h5 class=\"breadcrumbs-title\">Logo Form</h5>\n");
       out.write("                <ol class=\"breadcrumbs\">\n");
-      out.write("                  <li><a href=\"index.html\">Download tenders</a>\n");
+      out.write("                  <li><a href=\"index.html\">Logo</a>\n");
       out.write("                  </li>\n");
-      out.write("                  <li><a href=\"#\">Download_tender_table</a>\n");
+      out.write("                  <li><a href=\"#\">Logo table</a>\n");
       out.write("                  </li>\n");
-      out.write("                  <li class=\"active\">Download_Tenders Form</li>\n");
+      out.write("                  <li class=\"active\">Add logo Form</li>\n");
       out.write("                </ol>\n");
       out.write("              </div>\n");
       out.write("            </div>\n");
@@ -540,27 +540,24 @@ public final class download_005ftenders_005fform_jsp extends org.apache.jasper.r
       out.write("              <div class=\"row\">\n");
       out.write("                <div class=\"col s12 m12 l6\">\n");
       out.write("                  <div class=\"card-panel\">\n");
-      out.write("                    <h4 class=\"header2\">Download_tender form</h4>\n");
+      out.write("                    <h4 class=\"header2\">Add logo form</h4>\n");
       out.write("                    <div class=\"row\">\n");
-      out.write("                      <form class=\"col s12\"  action=\"http://localhost:8084/E_Tender_1.0/AddDownloadTenderServlet\" method=\"get\" >\n");
+      out.write("                      <form class=\"col s12\" action=\"http://localhost:8084/E_Tender_1.0/AddLogoServlet\" method=\"get\">\n");
       out.write("                        <div class=\"row\">\n");
-      out.write("\n");
-      out.write("                               \n");
-      out.write("              \n");
-      out.write("                             <div class=\"input-field col s12\">\n");
-      out.write("                            <input id=\"donload_tender_path\" name=\"donload_tender_path\" type=\"text\">\n");
-      out.write("                            <label for=\"first_name\">Downloaded tenders</label>\n");
-      out.write("                            <a class=\"btn waves-effect waves-light blue\">Browse</a>\n");
+      out.write("                          <div class=\"input-field col s12\">\n");
+      out.write("                            <input id=\"logo_image\"  name=\"logo_image\"type=\"text\">\n");
+      out.write("                            <label for=\"first_name\">Browse Logo</label><a class=\"btn waves-effect waves-light blue\">Browse</a>\n");
+      out.write("                          </div> \n");
       out.write("                          </div>\n");
-      out.write("              \n");
-      out.write("                             \n");
+      out.write("                           <div class=\"row\">\n");
+      out.write("                          <div class=\"input-field col s12\">\n");
+      out.write("                            <input id=\"tagline\"  name=\"tagline\" type=\"text\">\n");
+      out.write("                             <label for=\"first_name\">Enter Tagline</label>\n");
       out.write("                          </div>\n");
       out.write("                        </div>\n");
-      out.write("                    ");
-      out.write("\n");
-      out.write("                    <button type=\"submit\"  value=\"Submit\">Submit</button>      \n");
-      out.write("                    <a class=\"btn waves-effect waves-light blue\">Cancle</a>\n");
-      out.write("                          <a class=\"btn waves-effect waves-light blue\" href=\"download_tender_table.jsp\">view</a></p>\n");
+      out.write("                           <p><input class=\"btn waves-effect waves-light blue\" type=\"submit\" value=\"Add\"></a>\n");
+      out.write("                          <a class=\"btn waves-effect waves-light blue\">Cancle</a>\n");
+      out.write("                          <a class=\"btn waves-effect waves-light blue\" href=\"add_logo.jsp\">view</a></p>\n");
       out.write("                          \n");
       out.write("                      </form>\n");
       out.write("                    </div>\n");
@@ -611,7 +608,7 @@ public final class download_005ftenders_005fform_jsp extends org.apache.jasper.r
       out.write("\n");
       out.write("\n");
       out.write("<!-- Mirrored from demo.geekslabs.com/materialize/v3.1/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2017 10:28:19 GMT -->\n");
-      out.write("</html>\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

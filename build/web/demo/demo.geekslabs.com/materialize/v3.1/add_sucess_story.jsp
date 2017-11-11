@@ -102,54 +102,54 @@
                   <div class="card-panel">
                     <h4 class="header2">Add Success_Story form</h4>
                     <div class="row">
-                      <form class="col s12">
+                      <form class="col s12" action="http://localhost:8084/E_Tender_1.0/AddSucessStoryServlet" method="get" >
                         <div class="row">
                           
                           
               <!--there is no need of logo of website or compny name -->
 
                             <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="publisher_company_image"  name="publisher_company_image" type="text">
                             <label for="first_name">Publisher company photo</label>
                             <a class="btn waves-effect waves-light blue">Browse</a>
                           </div>
                         
                              <div class="input-field col s12">
-                            <input id="name" type="text">
-                            <label for="first_name">Company Name</label>
+                            <input id="company_name"  name="company_name" type="text">
+                            <label for="first_name">Company Name</label> 
                             <a class="btn waves-effect waves-light blue">Browse</a>
                           </div>
               
                             <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="tender_image" name="tender_image" type="text">
                             <label for="first_name">Tendere Photo</label>
                             <a class="btn waves-effect waves-light blue">Browse</a>
                           </div>
                         
                                <div class="input-field col s12">
-                            <textarea id="textarea2" class="materialize-textarea" length="120"></textarea>
+                            <textarea id="project_desc" name="project_desc" class="materialize-textarea" length="120"></textarea>
                             <label for="textarea1">Project Description</label>
                              </div>
               
                              <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="tenderer_oner_image"  name="tenderer_oner_image" type="text">
                             <label for="first_name">Tendere Company's Owner Photo</label>
                             <a class="btn waves-effect waves-light blue">Browse</a>
                           </div>
               
                              <div class="input-field col s12">
-                            <textarea id="textarea2" class="materialize-textarea" length="120"></textarea>
+                            <textarea id="owner_review" name="owner_review" class="materialize-textarea" length="120"></textarea>
                             <label for="textarea1">Owner's Overview</label>
                              </div>
                     
                              <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="publisher_image" name="publisher_image" type="text">
                             <label for="first_name">Publisher Photo</label>
                             <a class="btn waves-effect waves-light blue">Browse</a>
                           </div>
                             
                             <div class="input-field col s12">
-                            <textarea id="textarea2" class="materialize-textarea" length="120"></textarea>
+                            <textarea id="publisher_overview" name="publisher_overview" class="materialize-textarea" length="120"></textarea>
                             <label for="textarea1">Publisher Overview</label>
                              </div>
                        
@@ -157,7 +157,7 @@
                     
                           </div>
                         </div>
-                          <p><a class="btn waves-effect waves-light blue">Save</a>
+                    <button type="submit"  value="Submit">Submit</button>
                           <a class="btn waves-effect waves-light blue">Cancle</a>
                           <a class="btn waves-effect waves-light blue" href="sucess_story_table.jsp">view</a></p>
                           

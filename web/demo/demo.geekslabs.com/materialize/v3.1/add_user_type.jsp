@@ -102,17 +102,17 @@
                   <div class="card-panel">
                     <h4 class="header2">Add User_type form</h4>
                     <div class="row">
-                        <form class="col s12"  action="http://localhost:8084/E_Tender_1.0/addstateservlet" method="get">
+                        <form class="col s12"  action="http://localhost:8084/E_Tender_1.0/AddUsertypeServlet" method="get">
                         <div class="row">
                           <div class="input-field col s12">
-                            <input id="name" name="name" type="text">
+                            <input id="user" name="user" type="text">
                             <label for="first_name">User_type</label>
                           </div>
                         </div>
-                            
-                           <p><a class="btn waves-effect waves-light blue">Add</a>     
+                              <p><input class="btn waves-effect waves-light blue" type="submit" value="Add"></a>
+                           
                           <a class="btn waves-effect waves-light blue">Cancle</a>
-                          <a class="btn waves-effect waves-light blue" href="add state.jsp">view</a></p>
+                          <a class="btn waves-effect waves-light blue" href="user_add_table.jsp">view</a></p>
                           
                       </form>
                     </div>

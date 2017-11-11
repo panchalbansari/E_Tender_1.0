@@ -1,3 +1,9 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
+
+
 
 
 <!DOCTYPE html>
@@ -106,19 +112,21 @@
                         <th data-field="id">Op2</th>
                       </tr>
                     </thead>
+                    
+                    <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `user_type`");//SQl Query
+                       while (rs.next()) {
+                       %>
                         <tr>
-                        <td>1</td>
-                        <td>Publisher</td>
+                        <td><%= rs.getInt(1)%></td>
+                        <td><%= rs.getString(2)%></td>
                         <td><a href="edit_user_type">Edit</td>
                         <td><a href="edit_user_type">Delete</td>
                         </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Tendere</td>
-                        <td><a href="edit_user_type">Edit</td>
-                        <td><a href="edit_user_type">Delete</td>
-                        </tr>
-                      
+                      <%}%>
 
                     </tbody>
                   </table>

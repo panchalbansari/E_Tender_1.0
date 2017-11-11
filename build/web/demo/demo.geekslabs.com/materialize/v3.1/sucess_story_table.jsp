@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -110,20 +114,27 @@
                         <th data-field="id">Op2</th>
                       </tr>
                     </thead>
+                    <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `sucess_story`");//SQl Query
+                       while (rs.next()) {
+                       %>
                         <tr>
-                        <td>1</td>
-                        <td>image1.png</td>
-                        <td>SB Electrical </td>
-                        <td>image2.png</td>
-                        <td>abcdefghijklmn</td>
-                        <td>image3.png</td>
-                        <td>abcdefghijklmn</td>
-                        <td>image4.png</td>
-                        <td>abcdefghijklmn</td>
+                        <td><%= rs.getInt(1)%></td>
+                        <td><%= rs.getString(2)%></td>
+                        <td><%= rs.getString(3)%></td>
+                        <td><%= rs.getString(4)%></td>
+                        <td><%= rs.getString(5)%></td>
+                        <td><%= rs.getString(6)%></td>
+                        <td><%= rs.getString(7)%></td>
+                        <td><%= rs.getString(8)%></td>
+                        <td><%= rs.getString(9)%></td>
                         <td><a href="edit_sucess_story">Edit</td>
                         <td><a href="delete_sucess_story">Delete</td>
                        </tr>
-                      
+                      <%}%>
 
                    
                       

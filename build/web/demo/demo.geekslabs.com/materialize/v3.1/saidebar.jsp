@@ -110,7 +110,7 @@
                     
                 
                                 
-                                <li class="bold"><a href="user_add_table.jsp" class="waves-effect waves-cyan"><i class="mdi-social-group-add"></i>Add_user_type</a>
+                                <li class="bold"><a href="user_add_table.jsp" class="waves-effect waves-cyan"><i class="mdi-social-group-add"></i>User_type</a>
                             
                                 
                     
@@ -152,9 +152,9 @@
                                 </li>
                                 <li><a href="gallary_table.jsp"><i class="mdi-image-camera-alt"></i>Galllary</a>
                                 </li>
-                                <li><a href="add_tender_table.jsp"><i class="mdi-image-style"></i>Add_Tender</a>
+                                <li><a href="add_tender_table.jsp"><i class="mdi-image-style"></i>Tender</a>
                                 </li>
-                                <li><a href="add_critaria_table.jsp"><i class="mdi-image-loupe"></i>Add_critaria</a>
+                                <li><a href="add_critaria_table.jsp"><i class="mdi-image-loupe"></i>critaria</a>
                                 </li>
                                  <li><a href="require_info_table.jsp"><i class="mdi-action-receipt"></i>Require info</a>
                                 </li>
@@ -179,7 +179,7 @@
             </li>
             
                                   <li class="bold"><a href="sucess_story_table.jsp" class="waves-effect waves-cyan"><i class="mdi-action-thumb-up"></i>Sucess Story</a>
-                     <li class="bold"><a href="package_table.jsp" class="waves-effect waves-cyan"><i class="mdi-av-queue"></i>Add_package</a>
+                     <li class="bold"><a href="package_table.jsp" class="waves-effect waves-cyan"><i class="mdi-av-queue"></i>Package</a>
                       
                          <%--   <li class="bold"><a href="login_table.jsp" class="waves-effect waves-cyan"><i class="mdi-communication-vpn-key"></i>Login</a>
                      --%>

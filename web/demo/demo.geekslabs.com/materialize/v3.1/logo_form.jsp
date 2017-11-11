@@ -102,20 +102,20 @@
                   <div class="card-panel">
                     <h4 class="header2">Add logo form</h4>
                     <div class="row">
-                      <form class="col s12">
+                      <form class="col s12" action="http://localhost:8084/E_Tender_1.0/AddLogoServlet" method="get">
                         <div class="row">
                           <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="logo_image"  name="logo_image"type="text">
                             <label for="first_name">Browse Logo</label><a class="btn waves-effect waves-light blue">Browse</a>
                           </div> 
                           </div>
                            <div class="row">
                           <div class="input-field col s12">
-                            <input id="email" type="email">
-                            <label for="email">Enter Tagline</label>
+                            <input id="tagline"  name="tagline" type="text">
+                             <label for="first_name">Enter Tagline</label>
                           </div>
                         </div>
-                          <p><a class="btn waves-effect waves-light blue">Add</a>
+                           <p><input class="btn waves-effect waves-light blue" type="submit" value="Add"></a>
                           <a class="btn waves-effect waves-light blue">Cancle</a>
                           <a class="btn waves-effect waves-light blue" href="add_logo.jsp">view</a></p>
                           

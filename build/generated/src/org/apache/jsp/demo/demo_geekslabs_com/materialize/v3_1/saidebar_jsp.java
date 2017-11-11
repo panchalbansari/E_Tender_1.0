@@ -153,7 +153,7 @@ public final class saidebar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    \n");
       out.write("                \n");
       out.write("                                \n");
-      out.write("                                <li class=\"bold\"><a href=\"user_add_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-social-group-add\"></i>Add_user_type</a>\n");
+      out.write("                                <li class=\"bold\"><a href=\"user_add_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-social-group-add\"></i>User_type</a>\n");
       out.write("                            \n");
       out.write("                                \n");
       out.write("                    \n");
@@ -195,9 +195,9 @@ public final class saidebar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                </li>\n");
       out.write("                                <li><a href=\"gallary_table.jsp\"><i class=\"mdi-image-camera-alt\"></i>Galllary</a>\n");
       out.write("                                </li>\n");
-      out.write("                                <li><a href=\"add_tender_table.jsp\"><i class=\"mdi-image-style\"></i>Add_Tender</a>\n");
+      out.write("                                <li><a href=\"add_tender_table.jsp\"><i class=\"mdi-image-style\"></i>Tender</a>\n");
       out.write("                                </li>\n");
-      out.write("                                <li><a href=\"add_critaria_table.jsp\"><i class=\"mdi-image-loupe\"></i>Add_critaria</a>\n");
+      out.write("                                <li><a href=\"add_critaria_table.jsp\"><i class=\"mdi-image-loupe\"></i>critaria</a>\n");
       out.write("                                </li>\n");
       out.write("                                 <li><a href=\"require_info_table.jsp\"><i class=\"mdi-action-receipt\"></i>Require info</a>\n");
       out.write("                                </li>\n");
@@ -222,10 +222,10 @@ public final class saidebar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </li>\n");
       out.write("            \n");
       out.write("                                  <li class=\"bold\"><a href=\"sucess_story_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-action-thumb-up\"></i>Sucess Story</a>\n");
-      out.write("                     <li class=\"bold\"><a href=\"package_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-av-queue\"></i>Add_package</a>\n");
+      out.write("                     <li class=\"bold\"><a href=\"package_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-av-queue\"></i>Package</a>\n");
       out.write("                      \n");
-      out.write("                         <li class=\"bold\"><a href=\"login_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-communication-vpn-key\"></i>Login</a>\n");
-      out.write("                     \n");
+      out.write("                         ");
+      out.write("\n");
       out.write("                   <li class=\"bold\"><a href=\"tender_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-file-folder-open\"></i>Tender_by_publisher</a>\n");
       out.write("                          <li class=\"bold\"><a href=\"publisher_history_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-communication-call-missed\"></i>Publisher_history</a>\n");
       out.write("                <li class=\"bold\"><a href=\"download_tender_table.jsp\" class=\"waves-effect waves-cyan\"><i class=\"mdi-file-file-download\"></i>Download tenders</a>\n");

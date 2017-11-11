@@ -115,13 +115,15 @@
                     Connection con=dc.getconnection();
                     Statement stmt = con.createStatement();
                      ResultSet rs = stmt.executeQuery("SELECT * FROM `state`");//SQl Query
+                     int state_id=0;
                        while (rs.next()) {
                        %>
                         <tr>
-                            <td><%= rs.getInt(1)%></td>
+                           <%state_id = rs.getInt(1);%>
+                            <td><%=state_id%></td>
                         <td><%= rs.getString(2)%></td>
                         <td><a href="edit_state">Edit</td>
-                        <td><a href="edit_state">Delete</td>
+                        <td><a href="http://localhost:8084/E_Tender_1.0/deletestateservlet?stateid=<%=state_id%>">Delete</td>
                         </tr>
                       <%}%>
                     </tbody>

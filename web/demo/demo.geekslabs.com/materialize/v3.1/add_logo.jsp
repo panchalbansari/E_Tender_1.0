@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,6 +100,7 @@
                   <table>
                   </tbody>
                     <thead>
+                        
                       <tr>
                         <th data-field="id">Logo_id</th>
                         <th data-field="name">Logo_URL</th>
@@ -104,14 +109,21 @@
                         <th data-field="id">Op2</th>
                       </tr>
                     </thead>
+                    <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `logo`");//SQl Query
+                       while (rs.next()) {
+                       %>
                         <tr>
-                        <td>1</td>
-                        <td>C:\Users\dell\Desktop</td>
-                        <td>Tagline</td>
+                        <td><%= rs.getInt(1)%></td>
+                        <td><%= rs.getString(2)%></td>
+                        <td><%= rs.getString(3)%></td>
                         <td><a href="edit_logo">Edit</td>
                         <td><a href="edit_logo">Delete</td>
                        </tr>
-                      
+                       <%}%>
 
                    
                     </tbody>

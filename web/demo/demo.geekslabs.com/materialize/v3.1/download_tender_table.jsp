@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,14 +107,21 @@
                         <th data-field="id">Op2</th>
                       </tr>
                     </thead>
+                    <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `downloadtender`");//SQl Query
+                       while (rs.next()) {
+                       %>
                         <tr>
-                        <td>1</td>
-                        <td>//image1.png</td>
+                        <td><%= rs.getInt(1)%></td>
+                        <td><%= rs.getString(2)%></td>
                         <td><a href="Edit_Package">Edit</td>
                         <td><a href="Delete_Package">Delete</td>
                        </tr>
                       
-
+<%}%>
                    
                       
                     </tbody>

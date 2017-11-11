@@ -12,6 +12,26 @@
         <servlet-name>AddPackageServlet</servlet-name>
         <servlet-class>controller.AddPackageServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddUsertypeServlet</servlet-name>
+        <servlet-class>controller.AddUsertypeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddLogoServlet</servlet-name>
+        <servlet-class>controller.AddLogoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddSucessStoryServlet</servlet-name>
+        <servlet-class>controller.AddSucessStoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddDownloadTenderServlet</servlet-name>
+        <servlet-class>controller.AddDownloadTenderServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deletestateservlet</servlet-name>
+        <servlet-class>controller.deletestateservlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>addstateservlet</servlet-name>
         <url-pattern>/addstateservlet</url-pattern>
@@ -23,6 +43,26 @@
     <servlet-mapping>
         <servlet-name>AddPackageServlet</servlet-name>
         <url-pattern>/AddPackageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddUsertypeServlet</servlet-name>
+        <url-pattern>/AddUsertypeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddLogoServlet</servlet-name>
+        <url-pattern>/AddLogoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddSucessStoryServlet</servlet-name>
+        <url-pattern>/AddSucessStoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddDownloadTenderServlet</servlet-name>
+        <url-pattern>/AddDownloadTenderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deletestateservlet</servlet-name>
+        <url-pattern>/deletestateservlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

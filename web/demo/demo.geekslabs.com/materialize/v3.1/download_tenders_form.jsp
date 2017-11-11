@@ -102,13 +102,13 @@
                   <div class="card-panel">
                     <h4 class="header2">Download_tender form</h4>
                     <div class="row">
-                      <form class="col s12">
+                      <form class="col s12"  action="http://localhost:8084/E_Tender_1.0/AddDownloadTenderServlet" method="get" >
                         <div class="row">
 
                                
               
                              <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="donload_tender_path" name="donload_tender_path" type="text">
                             <label for="first_name">Downloaded tenders</label>
                             <a class="btn waves-effect waves-light blue">Browse</a>
                           </div>
@@ -116,8 +116,9 @@
                              
                           </div>
                         </div>
-                          <p><a class="btn waves-effect waves-light blue">Save</a>
-                          <a class="btn waves-effect waves-light blue">Cancle</a>
+                    <%-- <p><input class="btn waves-effect waves-light blue" type="submit" value="Add"></a> --%>
+                    <button type="submit"  value="Submit">Submit</button>      
+                    <a class="btn waves-effect waves-light blue">Cancle</a>
                           <a class="btn waves-effect waves-light blue" href="download_tender_table.jsp">view</a></p>
                           
                       </form>

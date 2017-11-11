@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="controller.DatabaseClass"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -112,8 +116,16 @@
                      <label for="first_name">State</label>
                     <select>
                       <option value="" disabled selected>Choose your state</option>
-                      <option value="1"></option>
-                     
+                       <%
+                     DatabaseClass dc=new DatabaseClass();
+                    Connection con=dc.getconnection();
+                    Statement stmt = con.createStatement();
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM `state`");//SQl Query
+                     int state_id=0;
+                       while (rs.next()) {
+                       %>  
+                      <option value="<%= rs.getInt(1)%>"><%= rs.getString(2)%></option>
+                     <%}%>
                     </select>
                   </div>
                 </div>

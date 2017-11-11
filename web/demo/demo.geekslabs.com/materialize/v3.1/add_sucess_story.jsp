@@ -109,9 +109,11 @@
               <!--there is no need of logo of website or compny name -->
 
                             <div class="input-field col s12">
-                            <input id="publisher_company_image"  name="publisher_company_image" type="text">
-                            <label for="first_name">Publisher company photo</label>
-                            <a class="btn waves-effect waves-light blue">Browse</a>
+                                <label for="first_name">Brows your Photo</label> <br><br>
+                                
+                                <input id="publisher_company_image"  name="publisher_company_image" type="file" accept=".jpg,.jpeg,.png" >
+                            
+                            
                           </div>
                         
                              <div class="input-field col s12">

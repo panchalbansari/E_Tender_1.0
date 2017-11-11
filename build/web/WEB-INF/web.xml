@@ -32,6 +32,14 @@
         <servlet-name>deletestateservlet</servlet-name>
         <servlet-class>controller.deletestateservlet</servlet-class>
     </servlet>
+     <servlet>
+        <servlet-name>Addpartnerservlet</servlet-name>
+        <servlet-class>controller.Addpartnerservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>contactusservlet</servlet-name>
+        <servlet-class>controller.contactusservlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>addstateservlet</servlet-name>
         <url-pattern>/addstateservlet</url-pattern>
@@ -63,6 +71,15 @@
     <servlet-mapping>
         <servlet-name>deletestateservlet</servlet-name>
         <url-pattern>/deletestateservlet</url-pattern>
+    </servlet-mapping>
+    
+      <servlet-mapping>
+        <servlet-name>Addpartnerservlet</servlet-name>
+        <url-pattern>/Addpartnerservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>contactusservlet</servlet-name>
+        <url-pattern>/contactusservlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
